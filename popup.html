@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Fake News Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎯 AI Fake News Detector</h1>
+      <p class="subtitle">Hybrid AI + Rule-based Analysis</p>
+    </div>
+
+    <div class="settings">
+      <input type="text" id="apiUrl" placeholder="Backend API URL (http://localhost:3000)" />
+      <button id="saveSettings">Save Settings</button>
+    </div>
+
+    <button id="analyzeBtn" class="analyze-btn">
+      🔍 Analyze Current Page
+    </button>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Analyzing content with AI...</p>
+    </div>
+
+    <div id="results" class="results hidden">
+      <div class="score-section">
+        <h2>Credibility Score</h2>
+        <div class="score-circle">
+          <span id="scoreValue">0</span>
+          <span class="percentage">%</span>
+        </div>
+        <p id="scoreLabel" class="score-label"></p>
+      </div>
+
+      <div class="details">
+        <div class="detail-card">
+          <h3>📊 Clickbait Probability</h3>
+          <div class="progress-bar">
+            <div id="clickbaitBar" class="progress-fill"></div>
+          </div>
+          <p id="clickbaitText"></p>
+        </div>
+
+        <div class="detail-card">
+          <h3>⚠️ Warning Signs</h3>
+          <ul id="warningsList"></ul>
+        </div>
+
+        <div class="detail-card">
+          <h3>✅ Positive Indicators</h3>
+          <ul id="positivesList"></ul>
+        </div>
+
+        <div class="detail-card">
+          <h3>🧠 AI Analysis</h3>
+          <p id="aiExplanation"></p>
+        </div>
+
+        <div class="detail-card">
+          <h3>📝 Summary</h3>
+          <p id="summary"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="error" class="error hidden">
+      <p id="errorMessage"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
