@@ -9,7 +9,7 @@
 ✅ Rule-based + AI hybrid (best practice)  
 ✅ Real fact-check style output  
 ✅ Clickbait detection  
-✅ Warning signs & positive indicators  
+✅ Warning signs & positive indicators
 
 ## 🚀 Installation
 
@@ -47,18 +47,22 @@ Backend will run on `http://localhost:3000`
 ## 🧠 How It Works
 
 ### Frontend (Chrome Extension)
+
 - Extracts webpage content
 - Sends to backend API
 - Displays beautiful analysis results
 
 ### Backend (Node.js API)
+
 1. **Rule-Based Analysis** (40% weight)
+
    - Clickbait patterns detection
    - Sensational language check
    - Source citations verification
    - Content quality metrics
 
 2. **AI Analysis** (60% weight)
+
    - Semantic understanding
    - Context evaluation
    - Credibility scoring
@@ -96,6 +100,7 @@ Currently uses **simulated AI** for demo. To use **real OpenAI GPT**:
 ## 🎨 What Makes This Special
 
 🔥 **Interview-Ready Features:**
+
 - Hybrid AI + rule-based system (industry best practice)
 - Secure API design (no exposed keys)
 - Real-world credibility metrics
@@ -105,11 +110,13 @@ Currently uses **simulated AI** for demo. To use **real OpenAI GPT**:
 ## 🛠️ Tech Stack
 
 **Frontend:**
+
 - Chrome Extension Manifest V3
 - Vanilla JavaScript
 - Modern CSS (gradients, animations)
 
 **Backend:**
+
 - Node.js + Express
 - RESTful API
 - Optional: OpenAI GPT integration
@@ -128,7 +135,7 @@ Currently uses **simulated AI** for demo. To use **real OpenAI GPT**:
 ✅ Backend API (no frontend key exposure)  
 ✅ CORS protection  
 ✅ Environment variables for secrets  
-✅ Localhost-first approach  
+✅ Localhost-first approach
 
 ## 🎓 Perfect For
 

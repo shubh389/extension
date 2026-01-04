@@ -3,22 +3,26 @@
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
+
 ```bash
 cd backend
 npm install
 ```
 
 ### 2. Create .env file
+
 ```bash
 copy .env.example .env
 ```
 
 ### 3. Run the Server
+
 ```bash
 npm start
 ```
 
 Or with auto-reload for development:
+
 ```bash
 npm run dev
 ```
@@ -45,9 +49,11 @@ To use **real OpenAI GPT**:
 ## 📡 API Endpoints
 
 ### POST /api/analyze
+
 Analyzes news content for credibility
 
 **Request:**
+
 ```json
 {
   "title": "Article title",
@@ -57,6 +63,7 @@ Analyzes news content for credibility
 ```
 
 **Response:**
+
 ```json
 {
   "credibilityScore": 75,
@@ -69,6 +76,7 @@ Analyzes news content for credibility
 ```
 
 ### GET /health
+
 Health check endpoint
 
 ## 🧠 How It Works
@@ -76,12 +84,14 @@ Health check endpoint
 **Hybrid Analysis System:**
 
 1. **Rule-Based Detection** (40% weight)
+
    - Clickbait patterns
    - Sensational language
    - Source citations
    - Content quality indicators
 
 2. **AI Analysis** (60% weight)
+
    - Semantic understanding
    - Context evaluation
    - Credibility assessment
